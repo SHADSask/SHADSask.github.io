@@ -111,8 +111,8 @@ header a:hover{
 
 /*Showcase*/
 #showcase{
-	min-height: 400px;
-	background: url('../img/Refuge.jpg') no-repeat;
+	min-height: 600px;
+	background: url('../img/Leaf.jpg') no-repeat;
 	text-align: center;
 	color:#ffffff;
 }

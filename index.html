@@ -1,126 +1,290 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset = "utf-8">
-		<meta name = "viewport" content = "width=device-width">
-		<meta name = "description" content = "Aesthetic">
-		<meta name = "keywords" content = "clean, clear, mountain">
-		<meta name = "author" content = "Brian Zhang">
-		
-			<title>
-				Towaraito
-			</title>
-			
-			
-		<link rel = "stylesheet" href = "./css/style.css">
-		<link rel= "stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
-		
-		
-		</head>
-	<body>
-	
-	<div class="parallax"></div>
-	
-			
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHAD</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
 
-		<header id = "fulltitle">
-			<div class = "container">
-			
-			
-			
-				<div id = "branding">
-					<h1><span class = "highlight">Towaraito</span></h1>
-				</div>
-				<nav>
-					<ul>
-						<li class = "current"><a href = "index.html">Home</a></li>
-						<li><a href = "about.html">About</a></li>
-						<li><a href = "services.html">Services</a></li>
-					</ul>
-				</nav
-			</div>
-		</header>
-	
-		<section id = "showcase">
-			<div class = "container">
-				<h1>Clarity and Illuminating Climb</h1>
-			<p>
-				Help Madeline survive her inner demons on her journey to the top of Celeste Mountain, in this super-tight platformer from the creators of TowerFall. Brave hundreds of hand-crafted challenges, uncover devious secrets, and piece together the mystery of the mountain.
-			</p>
-			</div>
-		</section>
-		
-		<section id = "newsletter">
-			<div class = "container">
-				<h1>Subscribe to our Newsletter</h1>
-				<form>
-					<input type = "email" placeholder = "Enter Email...">
-					<button type = "submit" class = "button_1">Subscribe</button>
-				</form>
-			</div>
-		</section>
-				
-		<section id = "boxes">
-			<div class = "container">
-			
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>HTML5 Markup</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-				
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>CSS Styling</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-				
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>Graphic Design</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>HTML5 Markup</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-				
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>CSS Styling</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-				
-				<div class = "box">
-					<img src="./img/CrimsilageFlag.png">
-					<h3>Graphic Design</h3>
-					<p>Help Madeline survive her inner demons on her journey to the top of Celeste Mountain.</p>
-				</div>
-			</div>
-		</section>
-				
-		<footer>
-		<p>Celeste Mountain is an extremely unforgiving journey. Have fun and climb safe.</p>
-		</footer>
-		
-		<script>
-		window.onscroll = function() {myFunction()};
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHAD</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BLOG</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
 
-		var header = document.getElementById("fulltitle");
-		var sticky = header.offsetTop;
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		  } else {
-			header.classList.remove("sticky");
-		  }
-		}
-		
-		</script>
-		
-		
-	</body>
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/Bright.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Unforgivable</h3>
+      <p><b>We had the best time learning at UofS!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/Refuge.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Unforgettable</h3>
+      <p><b>The atmosphere in Saskatchewan is electrifying.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/UniversityS.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Unmatched</h3>
+      <p><b>Thank you, Saskatchewan - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">SHAD - University of Saskatchewan</h2>
+    <p class="w3-opacity"><i>What is SHAD?</i></p>
+    <p class="w3-justify">SHAD is an award-winning enrichment and entrepreneurship program and network that empowers exceptional high school students – at a pivotal point in their education
+	– to recognize their own capabilities and envision their extraordinary potential as tomorrow’s leaders and change makers. Each year, about 900 students from across Canada
+	attend one of many Canadian host universities, with lectures, workshops, projects, and activities offered at every campus.</p>
+  
+   <p class="w3-opacity"><i>University of Saskatchewan</i></p>
+    <p class="w3-justify">At the heart of Saskatoon, on Treaty 6 territory and the homeland of the Métis, is the University of Saskatchewan, one of Canada’s top research universities.
+	The University of Saskatchewan happens to be one of SHAD's many host universities this year, and opens its doors to the 2018 SHAD alumni for a summer they will never forget.</p>
+
+
+
+
+   <div class="w3-row w3-padding-32">
+   <p class="w3-opacity"><i>Meet the team:</i></p>
+      <div class="w3-third">
+        <p>Program Director - Glyn Kennell</p>
+        <img src="./img/GlynKennell.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Program Manager - Vanessa Wiseman</p>
+        <img src="./img/Vanessa.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">BLOG</h2>
+      <p class="w3-opacity w3-center"><i>Check out what we've been up to!</i></p><br>
+
+    </div>
+  </div>
+
+  
+  <!-- Blog Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Downtown Day</h2>
+    <p class="w3-justify">There’s nothing that is able to make a Saskatchewan SHAD feel as many butterflies in their stomach as hearing about a special activity that’s supposed to take place the next day. This Saturday was especially amazing for us because we spent the entire day and afternoon exploring downtown Saskatoon! The weather was beautiful, a slight breeze under the brilliant blue sky and everyone was bubbling with excitement as we crossed the picturesque university bridge. Conversation flowed as smoothly as the calm waves of the river that morning and soon we were off on our very own adventure throughout the quaint city
+
+Downtown Day (what we call this lovely adventure) was full of fun options on where to spend your day. The fresh and natural farmer’s market was filled with amazing organic foods and the locals tastes of the area. To sweeten the deal, there was also the incredible Remai Gallery which was filled with Picasso and Durham pieces. There was also a mall, beautiful city landmarks and the amazing shore along the river to mention a few of the wonders in this city. 
+
+Plenty of SHADs were spotted with their friends trying on stylish new clothes (thanks to some great sales) and chatting at the food court over some food. As much fun as the city was, SHADs always remained respectful and the locals who came into contact with them were pleased to welcome them into their city. At the end of the day, music was played on speakers as we took in the view one more time before heading back to Qu’appelle hall, but we just call it home now. </p>
+
+  </div>
+  
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">First Day</h2>
+    <p class="w3-justify">
+SHADs everywhere met their lifelong friends today. Here at SHADSask, today was a whirlwind of excitement and adventure. Most of us met in the airport and on the plane, but we weren’t really introduced until we met some of the program assistants (PAs) at the Saskatoon airport. They shuttled us to our month-long home once we picked up our suitcases, and gave us a short tour. Once that was through, we piled out of the shuttle vans, and checked in with the program manager, Vanessa, as well as the rest of the PAs and Teacher Fellows. They gave us our rec shirts, a room key, and a mysterious puzzle piece. Once unpacked into our rooms, we were ushered into the SHAD Lounge (Shloungé for short). There, we played cards while awkwardly introducing ourselves and trying to make conversation. Soon after that, lunch arrived and we were on our way into the rest of opening day.
+ 
+After lunch, we split up into teams and went on a campus-wide scavenger hunt. This hunt really gave us a chance to experience the beauty of the University of Saskatchewan, as well as an opportunity to learn some more about a few other SHADs. The architecture on campus is truly breathtaking, and the more modern buildings fit in perfectly among the hundred-year-old masterpieces.
+ 
+Once we were all through the scavenger hunt, we were assigned our roll call numbers, and told to go to dinner. Supper was our first meal at Marquis Hall, the meal hall on our campus. Oh man, was it a great dinner. The food here gets better and better as time goes on. So many cultures and food choices are available in the buffet, and we got to learn more about each other as we ate our meal together.
+ 
+We met up after dinner, and walked to the Engineering building where we met our Program Director, Glyn Kennell. He talked to us about what to expect from SHAD, saying that while we may not believe him just yet, SHAD would be a transformational experience in all our lives. After Glyn’s speech, we were split into our houses, given a theme (changemakers), and told to paint a flag. This was an excellent way for everyone to get to know the members of their house, and to start building their teamwork skills.
+ 
+After the flags were painted and the brushes cleaned, it was time for opening ceremonies. At SHADSask, this meant finishing a puzzle with our mysterious puzzle pieces from so many hours earlier, and writing down our biggest hopes and fears for the month. These were collected and stored for later use. We introduced ourselves to the entire group, and gave a one-word description of our current feelings. With that completed, we were sent back to residence, and promptly fell asleep. We had just begun Glyn’s infamous transformational experience, and none of us knew it.
+
+</p>
+
+  </div>
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Camping Trip</h2>
+    <p class="w3-justify">
+As you may know, SHAD is an academic enrichment program geared towards STEAM principles. But SHAD exposes us to so much more than sciences and maths. This program is not confined to academic growth, it also allows us collaborate and build close relationships. Much of this is done through weekend trips, our very first one being a three day camping expedition. The first day was absolutely beautiful. Even before we reached the camp site, we sang on the bus, we talked and hiked. After we reached our destination, our groups set up tents, it was hilarious as only a few SHADs knew what they were doing. However, it was the evening that was most memorable. We had one fire, and all 63 of us squeezed around it. We took turns allowing skewers with marshmallows and hot dogs into the flames. We were comfortable in each other’s company and the warm night masked the first few drops of the oncoming thunderstorm. We gave up our scented items to the PA’s and were in our tents by 10:30. It was 8 to a tent, so I sat on a bench by the tent watching Netflix. I must’ve fallen asleep as I was woken by screaming! “The towel moved!” A girls voice yelled. Turns out I was the towel, more accurately, it was my XL hoodie. But that was the signal for me to head into the tent, it had been a long and exciting day. But it wasn’t over. We were woken once again, this time it was rain and lightning. We heard the footsteps of the PA’s outside. “Squish into the middle of the tent, it will help you stay dry!” 
+We listened and made sure nothing was touching the walls of the tent. We were scared and uncomfortable that night,and were forced to rely on each other for comfort. But it was okay, because every one of us had comfort to give. The next morning, the storm was completely over, and we joked about the night at breakfast. 
+Day 2 was once again filled with outdoor activities. We swam in a crystal clear lake, we canoed, and best of all, we hiked for 5km. The weather was perfect, and the animals in the area knew it too. That day we saw deer gallop and dragonflies swarm like fairies in a Disney movie. The days went by so fast but what I remember is as clear and vivid as that lake.
+
+
+
+</p>
+
+  </div>
+  
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">An Enlightening Experience</h2>
+    <p class="w3-justify">
+Ever heard of a synchrotron? It’s x-hilarating (because it can emit x-rays)! Bad puns aside, the University of Saskatchewan is very fortunate to have the only synchrotron in Canada (The Canadian Light Source/CLS) on it’s campus! What is a synchrotron you might ask? In simple terms, it’s an enormous machine the size of several hockey rinks that creates light by firing electrons and accelerating them to near the speed of light with powerful electromagnets so that the electrons emit highly focused wavelengths of light from different spectra to study the interaction of light and matter with the samples that are prepared. On day three, all of the SHADs were fortunate enough to be given a tour of the synchrotron to learn how it works, ask questions, and also learn which studies it has contributed to. Being the only synchrotron in Canada and alluring scientists from all around the world to work on it, everyone was incredibly honoured and excited to take a deeper look into it. Not to mention having been given a lecture on it the day before, the excitement was palpable.
+
+	I for one, was lucky enough to be chosen to work further with the synchrotron as workshop material because I bid a majority of my points towards it. Originally, the group that attended the workshop was supposed to organize a project and work with the synchrotron to realize it however, the luck was not on our ends and the synchrotron was unfortunately down for the time being that SHAD would take place. Unexpectedly, instead of being given further extensive tours on the synchrotron, the group was given an opportunity to work in the chemistry building of the university as well as the Saskatchewan Structural Sciences Centre (SSSC). This means that instead of performing an experiment with the synchrotron, the group of students would formulate an idea to experiment on, and use the equipment available to them from the alternative resources.
+
+	Ultimately, the idea that was decided was to test how the degree of burning of food affects the levels of carcinogens. To further elaborate, because this year’s SHAD theme is resilience in Canadian communities in reaction to natural disasters, the food would be cooked over an open fire and the items selected were survival food (potatoes and canned sardines). After the samples were prepared: raw sample, cooked sample, burnt sample, charred sample, students were given the opportunity to do research over the course of an entire day on extremely expensive machines. Equipment such as the FTIR (Fourier-Transform Infrared Machine), NMR (Nuclear Magnetic Resonance Machine), XPS (Axis Sapra), and GC-MS (Gas Chromatography Mass Spectroscopy) were used. Not only did we complete our research, we identified conclusions from it: through the analysis of our results, we can support the statement that the levels of carcinogens such as acrylamide and polycyclic aromatic hydrocarbons rise as the starch based foods such as potatoes become charred. Additionally, we presented to several professors, CLS staff, and even the president of SHAD: Tim Jackson at the CLS building during a 45 minute PowerPoint presentation and Q&A. Undoubtedly the Canadian Light Source has been an incredibly unique and educational experience for all the SHADs. 
+
+
+
+
+</p>
+
+  </div>
+  
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Saskatoon, Canada<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
 </html>
